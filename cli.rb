@@ -2,7 +2,13 @@ require 'rubygems'
 require 'trollop'
 require 'ostruct'
 
+puts <<-EOS
+Use --help to list options
+Starting client...
+EOS
+
 @options = Trollop::options do
+
   opt :host, "Host for the amqp server", :default => "127.0.0.1"
   opt :user, "User for the amqp connection", :default => "guest"
   opt :password, "Password for the amqp connection", :default => "guest"
