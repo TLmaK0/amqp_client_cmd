@@ -1,0 +1,15 @@
+Requirements:
+  ruby
+  rubygems
+  bundler
+  
+Installation:
+  bundle install --deployment
+
+Usage:
+
+  -Start subscriber
+  bundle exec ruby recive.rb
+
+  -Start publisher
+  bundle exec ruby send.rb
