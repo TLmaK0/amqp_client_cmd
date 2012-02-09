@@ -17,7 +17,6 @@ EOS
   opt :routing_key, "Routing key for the message sended", :default => "testroutingkey"
   opt :message, "Message to send to exchange", :default => "test message"
   opt :queue, "Queue name", :default => "testqueue"
-  opt :timestamp, "Timestamp", :default => ((Time.now.to_f)*1000).truncate
 end
 
 @options = OpenStruct.new(@options)
